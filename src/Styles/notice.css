@@ -1,0 +1,49 @@
+/* Styles/notice.css */
+
+.notice-board {
+    max-width: 900px; /* Adjust max width as needed */
+    margin: 30px auto; /* Adjust top margin */
+    padding: 20px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.notice-board h2 {
+    margin-bottom: 25px;
+    font-size: 24px; /* Slightly smaller title */
+    color: #f80606; /* Darker title text */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.notice-list {
+    display: grid; /* Use grid for a more structured layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 15px;
+}
+
+.notice-card {
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Subtle border */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* More subtle shadow */
+}
+
+.notice-card:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slight shadow increase on hover */
+}
+
+.notice-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff; /* Primary blue for titles */
+    font-size: 1.2rem;
+}
+
+.notice-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}

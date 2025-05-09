@@ -1,0 +1,52 @@
+/* Prevent scrollbars, make full screen */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full page background */
+.home-wrapper {
+  background-color: #011c3a;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Exact size of SJIT card */
+.home-card {
+  background-color: white;
+  border-radius: 12px;
+  width: 920px;         /* Exact fixed width */
+  height: 540px;        /* Exact fixed height */
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1cm;      /* 1 cm gap between the header and the card */
+}
+
+/* Lottie animation */
+.lottie-container {
+  width: 100%;
+  height: 340px; /* balanced inside 540px height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+/* Welcome text */
+.welcome-text {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #011c3a;
+}
+

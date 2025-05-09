@@ -1,0 +1,75 @@
+/* src/Styles/SignIn.css */
+.signin-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .signin-image {
+    flex: 1;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signin-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .signin-form {
+    flex: 1;
+    background: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .signin-form h2 {
+    margin-bottom: 20px;
+    color: #001f3f;
+  }
+  
+  .signin-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .captcha-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .captcha-text {
+    background: #eee;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .signin-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signin-button:hover {
+    background-color: #0056b3;
+  }
+  

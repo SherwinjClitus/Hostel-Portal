@@ -1,0 +1,99 @@
+/* Styles/MessFeedbackForm.css */
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.form-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 500;
+    color: #555;
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    color: #333;
+    resize: vertical;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    min-height: 100px;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 10px; /* Use gap for spacing between buttons */
+    margin-bottom: 20px;
+}
+
+.rating-button {
+    flex-grow: 1; /* Distribute space evenly */
+    padding: 10px 0;
+    border: 1px solid #ccc; /* More subtle border */
+    border-radius: 4px;
+    background-color: #f8f8f8; /* Light background */
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-align: center; /* Center the rating number */
+}
+
+.rating-button.selected {
+    background-color: #007bff; /* Primary blue for selected */
+    color: white;
+    border-color: #007bff;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.rating-button:hover {
+    background-color: #e0f7fa; /* Light cyan on hover */
+    color: #007bff;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    width: auto;
+    background-color: #007bff; /* Primary blue for submit */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

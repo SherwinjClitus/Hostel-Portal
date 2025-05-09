@@ -1,0 +1,81 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Force light color scheme for consistency with SJIT portal */
+  color-scheme: light;
+  color: #333; /* Dark text for content areas */
+  background-color: #001f3f; /* Dark blue background (SJIT portal style) */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #007bff; /* A standard blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: stretch; /* Make children take full width */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #001f3f; /* Ensure body background is also dark blue */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222; /* Dark color for headings */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #007bff; /* Primary button color (blue) */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Override light mode preferences if any */
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #333;
+      background-color: #001f3f;
+  }
+}
+
+/* Style for the main content container (to have a white background) */
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}

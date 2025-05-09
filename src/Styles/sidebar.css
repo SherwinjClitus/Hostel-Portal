@@ -1,0 +1,131 @@
+/* Updated Sidebar Styling to match the SJIT portal */
+.sidebar {
+  width: 220px; /* Adjust width as needed */
+  padding-top: 20px;
+  background-color: #001f3f; /* Dark blue background (SJIT portal style) */
+  color: #ffffff; /* White text color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.sidebar-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left; /* Align title to the left */
+  color: #ffffff; /* White title text */
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #ffffff; /* White link text */
+  font-size: 1rem;
+  margin-bottom: 5px;
+  border-radius: 0; /* No rounded corners */
+  transition: background-color 0.3s ease, padding-left 0.3s ease; /* Removed transform */
+}
+
+.nav-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.2rem; /* Adjusted icon size */
+}
+
+.nav-link:hover {
+  background-color: #003366; /* Slightly darker blue on hover */
+  padding-left: 25px; /* Subtle hover effect */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Highlighted blue for active link */
+  color: #ffffff;
+  font-weight: bold;
+  padding-left: 25px; /* Maintain increased padding for active */
+}
+
+/* Styles for the main content area */
+.main-content {
+  margin-left: 220px; /* Adjust to the sidebar width */
+  display: flex;
+  flex-direction: column; /* Stack header and content */
+  min-height: 100vh;
+  transition: margin-left 0.3s ease; /* For potential sidebar toggle */
+}
+
+.content-area {
+  flex-grow: 1; /* Take up remaining vertical space */
+  padding: 20px;
+  padding-left: 30px;
+  padding-top: 10px; /* Adjust as needed below header */
+  background-color: #ffffff; /* Assuming white content background */
+}
+
+/* Media Queries for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .sidebar-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .content-area {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-content {
+    margin-left: 150px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .sidebar-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .content-area {
+    padding: 15px;
+    padding-left: 15px;
+  }
+}
